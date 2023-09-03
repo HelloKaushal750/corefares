@@ -1,0 +1,37 @@
+.register_office > p {
+  color: white;
+}
+.footer_tag > p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer_footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.footer_footer > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.footer_div{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 40px 60px;
+  border-bottom: 1px solid #404756;
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .footer_div{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px){
+   .footer_div{
+    flex-direction: column;
+   }
+}
